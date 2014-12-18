@@ -1,9 +1,12 @@
-bash-irc-bot
+JB-Topic-Bot
 ============
 
-A simple, modular IRC bot written in bash
+IRC topic bot written in bash based off of Newbrict's bash-irc-bot.
 
-throw "modules" into /modules/module-name/module-name.sh
-and they will be loaded up during runtime.
+Designed to work in co-operation with JB-Announcer.
 
-call modules with botname: test arg1 arg2 ....
+**Requirements**
+
+1. inotify-tools
+2. tail
+3. telnet
