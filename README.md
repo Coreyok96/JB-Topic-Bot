@@ -7,6 +7,7 @@ Designed to work in co-operation with JB-Announcer.
 
 **Requirements**
 
-1. inotify-tools
-2. tail
-3. telnet
+1. linux
+2. inotify-tools
+3. tail
+4. telnet
