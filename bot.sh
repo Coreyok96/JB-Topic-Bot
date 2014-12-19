@@ -18,6 +18,7 @@ do
     ;;
     # for pings on nick/user
     *"005"*)
+	  echo "PRIVMSG NickServ :IDENTIFY $password" >> $input
       echo "JOIN #$channel" >> $input
 	  sleep 3
 	  while true; do
