@@ -21,9 +21,7 @@ do
 	  echo "PRIVMSG NickServ :IDENTIFY $password" >> $input
       echo "JOIN #$channel" >> $input
 	  sleep 3
-	  while true; do
-	    inotifywait -r -e close_write,create ./announcement && TOPIC=$(cat ./announcement/announcement.txt) && echo "TOPIC #$channel :$TOPIC" >> $input
-	    done
+	  ./topic.sh &
     ;;
     *)
     ;;
